@@ -25,14 +25,14 @@ public class SalesCommission {
         int itemSold = input.nextInt();
 
         while( itemSold != -1) {
-         itemCounter += itemSold;
+         itemCounter += 1;
          System.out.print("Enter sales item sold or -1 to quit:");
          itemSold = input.nextInt();
         }
         if (itemSold != 0) {
             double earnings = itemSold * 0.09 + 200;
             System.out.printf("%nItemCounter of the %d itemSold entered is %d%n", itemCounter, itemSold);
-            System.out.printf("Sales earnings is %f%n", earnings);
+            System.out.printf("Sales earnings is %.2f%n", earnings);
         }
         else {
             System.out.print("No itemSold was entered");

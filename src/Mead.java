@@ -1,19 +1,22 @@
-  import java.util.Scanner;
+import java.util.Scanner;
+
+
 
 // implementing sentinel controlled repetition
 
-public class ClassAverage {
+public class Mead {
 
     public static void main(String[] args) {
         int total = 0;
         int gradeCounter = 0;
 
         Scanner input = new Scanner(System.in);
+
         System.out.print("Enter your grade or -1 to quit:");
 
         int grade  = input.nextInt();
 
-        while(grade != -1 ) {
+        while(grade <= 50 ) {
 
             total = total + grade;
             gradeCounter = gradeCounter + 1;
@@ -23,10 +26,11 @@ public class ClassAverage {
         }
 
         if (gradeCounter != 0){
-            double average = (double) total / gradeCounter;
+            double mean = (double) total / gradeCounter;
+//          double frequency = gradeCounter++;
             System.out.printf("%nTotal of the %d grades entered is %d%n",
                     gradeCounter, total);
-            System.out.printf("Class average is %.2f%n", average);
+            System.out.printf("Class average is %.2f%n", mean);
         }
         else
             System.out.println("No grades was entered");

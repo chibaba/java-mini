@@ -10,6 +10,9 @@ public class BubbleSort {
                 }
             }
         }
+        for (int i = 0; i < intArray.length; i++) {
+            System.out.print(intArray[i]);
+        }
 
     }
     public static void swap(int [] array, int i, int j) {

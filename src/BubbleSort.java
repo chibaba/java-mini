@@ -1,6 +1,6 @@
 public class BubbleSort {
     public static void main(String[] args) {
-        int [] intArray = {12, 1, 87, 98, 9, 89, 34};
+        int [] intArray = {12, -1, -87, 98, 9, 89, 34};
 
         for (int lastUnsortedIndex =intArray.length -1; lastUnsortedIndex > 0;
               lastUnsortedIndex--) {
@@ -11,7 +11,7 @@ public class BubbleSort {
             }
         }
         for (int i = 0; i < intArray.length; i++) {
-            System.out.print(intArray[i]);
+            System.out.println(intArray[i]);
         }
 
     }
